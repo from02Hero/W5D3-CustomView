@@ -6,4 +6,11 @@
         <attr name="chevron_vis" format="boolean" />
         <attr name="foreground_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="custom_component_attributes">
+        <attr name="custom_component_title" format="string"/>
+        <attr name="custom_component_image" format="reference" />
+        <attr name="custom_component_chevron_vis" format="boolean" />
+        <attr name="custom_component_foreground_color" format="color" />
+    </declare-styleable>
 </resources>

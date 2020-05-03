@@ -7,13 +7,24 @@
     android:layout_margin="16dp"
     tools:context="com.example.customview.view.MainActivity">
 
+    <com.example.customview.view.CustomView2
+        android:id="@+id/cv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp"
+        app:custom_component_title="app_name"
+        app:custom_component_chevron_vis="false"
+        app:custom_component_foreground_color="@color/colorAccent"
+        app:custom_component_image="@drawable/ic_child_friendly_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/usersRv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cv_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
