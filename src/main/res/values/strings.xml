@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Custom View</string>
     <string name="text_not_defined">Placeholder Text</string>
+    <string name="hello_custom_views">Hello Custom Views</string>
 </resources>
